@@ -122,3 +122,7 @@ career_info
 | profile_id | 프로필 ID (FK) |
 | item_name | 정보 항목 |
 | item_value | 정보 내용 |
+
+## ERD
+
+![Career Profile ERD](docs/erd.png)
