@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>프로필 수정 - Career Profile</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>프로필 수정</h1>
+
+        <p class="subtitle">
+            저장된 커리어 정보를 수정해주세요.
+        </p>
+
+        <form action="/profile/update" method="post">
+
+            <input type="hidden"
+                   th:name="${_csrf.parameterName}"
+                   th:value="${_csrf.token}">
+
+            <input type="hidden"
+                   name="id"
+                   th:value="${profile.id}">
+
+            <div class="form-group">
+                <label>이름</label>
+                <input type="text"
+                       name="name"
+                       th:value="${profile.name}">
+            </div>
+
+            <div class="form-group">
+                <label>학교</label>
+                <input type="text"
+                       name="school"
+                       th:value="${profile.school}">
+            </div>
+
+            <div class="form-group">
+                <label>전공</label>
+                <input type="text"
+                       name="major"
+                       th:value="${profile.major}">
+            </div>
+
+            <div class="form-group">
+                <label>학점</label>
+                <input type="text"
+                       name="grade"
+                       th:value="${profile.grade}">
+            </div>
+
+            <button class="save-button" type="submit">
+                수정 저장
+            </button>
+
+        </form>
+
+        <div class="bottom-buttons">
+
+            <a href="/profile/list"
+               class="button secondary-button">
+                프로필 목록
+            </a>
+
+            <a href="/"
+               class="button secondary-button">
+                메인으로
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

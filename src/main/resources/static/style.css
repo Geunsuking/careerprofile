@@ -1,0 +1,533 @@
+/* =========================
+   기본 설정
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f6f8;
+    color: #222;
+}
+
+
+/* =========================
+   전체 컨테이너
+   ========================= */
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 60px auto;
+}
+
+
+/* =========================
+   카드
+   ========================= */
+
+.card {
+    background: white;
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
+}
+
+.main-card {
+    text-align: center;
+    padding: 60px 35px;
+}
+
+
+/* =========================
+   제목 / 설명
+   ========================= */
+
+h1 {
+    margin: 0 0 10px;
+    font-size: 30px;
+}
+
+.subtitle {
+    color: #777;
+    margin: 0 0 35px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   공통 버튼
+   ========================= */
+
+button,
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 10px;
+
+    height: 48px;
+    padding: 0 18px;
+
+    cursor: pointer;
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+
+    transition: background-color 0.2s, opacity 0.2s;
+}
+
+button:hover,
+.button:hover {
+    opacity: 0.9;
+}
+
+
+/* =========================
+   메인 화면 버튼 영역
+   ========================= */
+
+.main-buttons {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   프로필 영역
+   ========================= */
+
+.profile-section {
+    margin-top: 36px;
+    text-align: center;
+}
+
+
+/* =========================
+   프로필 이름
+   ========================= */
+
+.profile-name {
+    font-size: 23px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   프로필 보러가기
+   ========================= */
+
+.profile-view-button {
+    width: 100%;
+    background: #222;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.profile-view-button:hover {
+    background: #000;
+}
+
+
+/* =========================
+   프로필 수정 / 새로운 정보 추가
+   ========================= */
+
+.full-button {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.sub-button {
+    background: #f1f2f4;
+    color: #333;
+    border: 1px solid #e2e3e5;
+}
+
+.sub-button:hover {
+    background: #e6e7e9;
+}
+
+
+/* =========================
+   기존 메인 버튼
+   ========================= */
+
+.main-button {
+    background: #222;
+    color: white;
+}
+
+.main-button:hover {
+    background: #444;
+}
+
+
+/* =========================
+   보조 버튼
+   ========================= */
+
+.secondary-button {
+    background: #f0f1f3;
+    color: #333;
+}
+
+.secondary-button:hover {
+    background: #e5e6e8;
+}
+
+
+/* =========================
+   로그아웃
+   ========================= */
+
+.logout-area {
+    width: 100%;
+    max-width: 420px;
+    margin: 30px auto 0;
+}
+
+.logout-area form {
+    width: 100%;
+    margin: 0;
+}
+
+.logout-button {
+    display: flex;
+    width: 100%;
+}
+
+
+/* =========================
+   폼
+   ========================= */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #555;
+}
+
+
+/* =========================
+   저장 버튼
+   ========================= */
+
+.save-button {
+    width: 100%;
+    margin-top: 5px;
+    padding: 14px;
+    background: #222;
+    color: white;
+    font-size: 15px;
+}
+
+.save-button:hover {
+    background: #444;
+}
+
+
+/* =========================
+   기본 정보 영역
+   ========================= */
+
+.basic-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.basic-header .profile-name {
+    margin: 0;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.basic-header .edit-button {
+    flex-shrink: 0;
+}
+
+.profile-empty {
+    text-align: center;
+    margin: 28px 0 18px;
+    color: #666;
+}
+
+
+/* =========================
+   프로필
+   ========================= */
+
+.profile {
+    border-top: 1px solid #eee;
+    padding: 24px 0;
+}
+
+.profile:first-child {
+    border-top: none;
+}
+
+.profile-info {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+
+/* =========================
+   프로필 헤더
+   ========================= */
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.profile-header .actions {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: auto;
+}
+
+.profile-header .actions form {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================
+   수정 / 삭제 버튼 공통
+   ========================= */
+
+.edit-button,
+.info-edit-button,
+.delete-button,
+.info-delete-button {
+    box-sizing: border-box;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 38px;
+    min-width: 48px;
+    padding: 0 12px;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 14px;
+    line-height: 1;
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   수정 버튼
+   ========================= */
+
+.edit-button,
+.info-edit-button {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+.edit-button:hover,
+.info-edit-button:hover {
+    background-color: #e5e5e5;
+}
+
+
+/* =========================
+   삭제 버튼
+   ========================= */
+
+.delete-button,
+.info-delete-button {
+    background-color: #f1f1f1;
+    color: #e53935;
+}
+
+.delete-button:hover,
+.info-delete-button:hover {
+    background-color: #e5e5e5;
+}
+
+
+/* =========================
+   수정 / 삭제 영역
+   ========================= */
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.actions form {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================
+   추가 정보 / 경력 정보
+   ========================= */
+
+.career-info-list {
+    margin-top: 20px;
+}
+
+.career-info-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    margin-top: 14px;
+    padding: 18px 20px;
+
+    background: #f8f9fb;
+    border: 1px solid #e8e9ec;
+    border-radius: 10px;
+}
+
+.career-info-content {
+    flex: 1;
+    min-width: 0;
+}
+
+
+/* =========================
+   추가 정보 항목 이름
+   ========================= */
+
+.career-info-name {
+    margin-bottom: 7px;
+
+    font-size: 13px;
+    font-weight: 600;
+    color: #777;
+}
+
+
+/* =========================
+   추가 정보 실제 내용
+   ========================= */
+
+.career-info-value {
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   추가 정보 수정 / 삭제
+   ========================= */
+
+.career-info-actions {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: 20px;
+}
+
+.career-info-actions form {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================
+   하단 버튼
+   ========================= */
+
+.bottom-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.bottom-buttons .button {
+    flex: 1;
+}
+
+
+/* =========================
+   반응형
+   ========================= */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 94%;
+        margin: 30px auto;
+    }
+
+    .card {
+        padding: 25px 20px;
+    }
+
+    .main-card {
+        padding: 40px 20px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .main-buttons {
+        max-width: 100%;
+    }
+
+    .bottom-buttons {
+        flex-direction: column;
+    }
+
+    .career-info-item {
+        gap: 10px;
+        padding: 16px;
+    }
+
+    .career-info-actions {
+        margin-left: 10px;
+    }
+}

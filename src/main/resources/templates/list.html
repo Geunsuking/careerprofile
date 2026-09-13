@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>내 프로필 - Career Profile</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>내 프로필</h1>
+
+        <p class="subtitle">
+            저장된 커리어 정보를 확인하세요.
+        </p>
+
+
+        <!-- 기본 정보 -->
+        <div class="section">
+
+            <h2>기본 정보</h2>
+
+            <div th:each="profile : ${profiles}"
+                 class="basic-profile">
+
+                <!-- 이름 + 수정 버튼 -->
+                <div class="basic-header">
+
+                    <div class="profile-name"
+                         th:text="${profile.name}">
+                    </div>
+
+                    <a class="edit-button"
+                       th:href="@{/profile/edit(id=${profile.id})}">
+                        수정
+                    </a>
+
+                </div>
+
+
+                <!-- 학교 / 전공 / 학점 -->
+                <div class="profile-info">
+
+                    <div>
+                        학교 :
+                        <span th:text="${profile.school}"></span>
+                    </div>
+
+                    <div>
+                        전공 :
+                        <span th:text="${profile.major}"></span>
+                    </div>
+
+                    <div>
+                        학점 :
+                        <span th:text="${profile.grade}"></span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- 추가 정보 -->
+        <div class="section additional-section">
+
+            <h2>추가 정보</h2>
+
+            <div class="career-info-list"
+                 th:if="${careerInfos != null}">
+
+                <div class="career-info-item"
+                     th:each="info : ${careerInfos}">
+
+                    <!-- 정보 내용 -->
+                    <div class="career-info-content">
+
+                        <div class="career-info-name"
+                             th:text="${info.itemName}">
+                        </div>
+
+                        <div class="career-info-value"
+                             th:text="${info.itemValue}">
+                        </div>
+
+                    </div>
+
+
+                    <!-- 수정 / 삭제 -->
+                    <div class="career-info-actions">
+
+                        <a class="info-edit-button"
+                           th:href="@{/profile/info/edit(id=${info.id})}">
+                            수정
+                        </a>
+
+                        <form action="/profile/info/delete"
+                              method="post">
+
+                            <input type="hidden"
+                                   th:name="${_csrf.parameterName}"
+                                   th:value="${_csrf.token}">
+
+                            <input type="hidden"
+                                   name="id"
+                                   th:value="${info.id}">
+
+                            <button class="info-delete-button"
+                                    type="submit">
+                                삭제
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- 하단 버튼 -->
+        <div class="bottom-buttons">
+
+            <a href="/profile/info/add"
+               class="button main-button">
+                정보 추가
+            </a>
+
+            <a href="/"
+               class="button secondary-button">
+                메인으로
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
