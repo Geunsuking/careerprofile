@@ -76,6 +76,7 @@ JPA Repository를 이용하여 데이터 등록, 조회, 수정, 삭제 기능�
 
 프로젝트에서는 다음 3개의 주요 테이블을 사용합니다.
 
+
 ```text
 app_user
     │
@@ -86,6 +87,7 @@ career_profile
     │ 1 : N
     ▼
 career_info
+```
 
 ### app_user
 
