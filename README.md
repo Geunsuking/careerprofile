@@ -79,7 +79,7 @@ Spring Boot와 JPA를 사용하여 PostgreSQL 데이터베이스와 연동하고
 
 ### 🏠 메인 화면
 
-| 메인 화면 | 메인 화면 - 프로필 |
+| 메인 화면 | 메인 화면2 |
 |---|---|
 | ![메인 화면](./docs/main.png) | ![메인 화면2](./docs/main2.png) |
 
@@ -95,7 +95,7 @@ Spring Boot와 JPA를 사용하여 PostgreSQL 데이터베이스와 연동하고
 |---|---|
 | ![프로필 조회](./docs/profile.png) | ![프로필 수정](./docs/profile%20edit.png) |
 
-### ✏️ 프로필 수정
+### ✏️ 프로필 수정2
 
 ![프로필 수정](./docs/profile%20edit2.png)
 
