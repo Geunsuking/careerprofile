@@ -75,10 +75,13 @@ Spring Boot와 JPA를 사용하여 PostgreSQL 데이터베이스와 연동하고
 
 ## 🖥 화면 구성
 
+## 🖥 화면 구성
+
 ### 🏠 메인 화면
 
-<!-- 실제 스크린샷이 있다면 아래에 추가 -->
-![메인 화면](./docs/main.png)
+| 메인 화면 | 메인 화면 - 프로필 |
+|---|---|
+| ![메인 화면](./docs/main.png) | ![메인 화면2](./docs/main2.png) |
 
 ### 🔐 회원가입 / 로그인
 
@@ -92,10 +95,9 @@ Spring Boot와 JPA를 사용하여 PostgreSQL 데이터베이스와 연동하고
 |---|---|
 | ![프로필 조회](./docs/profile.png) | ![프로필 수정](./docs/profile%20edit.png) |
 
-### 💼 커리어 정보
+### ✏️ 프로필 수정
 
-<!-- 실제 스크린샷이 있다면 추가 -->
-![커리어 정보](./docs/career.png)
+![프로필 수정](./docs/profile%20edit2.png)
 
 ---
 
