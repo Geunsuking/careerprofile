@@ -1,5 +1,7 @@
 # 💼 Career Profile
 
+🌐 **[서비스 바로가기 →](여기에-배포-https://careerprofile-eja5.onrender.com)**
+
 > 회원가입 및 로그인 후 개인 프로필과 커리어 정보를 등록하고 관리할 수 있는 웹 애플리케이션
 
 Spring Boot와 JPA를 사용하여 PostgreSQL 데이터베이스와 연동하고,  
