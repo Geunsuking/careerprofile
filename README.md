@@ -97,7 +97,7 @@ Spring Boot와 JPA를 사용하여 PostgreSQL 데이터베이스와 연동하고
 
 ### ✏️ 프로필 수정2
 
-![프로필 수정](./docs/profile%20edit2.png)
+<img src="./docs/profile%20edit2.png" width="600">
 
 ---
 
